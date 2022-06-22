@@ -64,7 +64,7 @@ const NavBar = function () {
           variant="text"
           style={
             final === "home"
-              ? { color: "white", transform: "scale(1.4)" }
+              ? { color: "white", transform: "scale(1.25)" }
               : null
           }
         >
@@ -77,7 +77,7 @@ const NavBar = function () {
           variant="text"
           style={
             final === "about"
-              ? { color: "white", transform: "scale(1.4)" }
+              ? { color: "white", transform: "scale(1.25)" }
               : null
           }
         >
@@ -90,7 +90,7 @@ const NavBar = function () {
           variant="text"
           style={
             final === "projects"
-              ? { color: "white", transform: "scale(1.4)" }
+              ? { color: "white", transform: "scale(1.25)" }
               : null
           }
         >

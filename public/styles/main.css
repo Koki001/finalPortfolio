@@ -750,11 +750,14 @@ template {
   }
 }
 @media (max-width: 500px) {
+  #root .about {
+    padding-top: 0;
+  }
   .navBar {
     flex-direction: column;
     justify-content: space-between;
-    bottom: 50px;
-    height: 12%;
+    bottom: 10px;
+    height: 13%;
   }
   .navBar .middleNav {
     width: 90%;
@@ -795,14 +798,32 @@ template {
     align-items: flex-start;
   }
   .aboutContainer .aboutSkills .smallerScreenSkills {
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .aboutContainer .aboutSkills .smallerScreenSkills p {
     margin: 5px 5px;
   }
+  #root .projects {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+  .projectsContainer {
+    justify-content: flex-start;
+  }
+  .projectsContainer h2 {
+    display: none;
+  }
   .projectsContainer .projectView {
     width: 100%;
     padding-bottom: 150px;
+    justify-content: flex-start;
+  }
+  .projectsContainer .projectView .singleProject {
+    justify-content: flex-start;
+    height: 80%;
+  }
+  .projectsContainer .projectViewContainer {
+    justify-content: flex-start;
   }
   .projectsContainer .projectViewContainer .prev,
 .projectsContainer .projectViewContainer .next {

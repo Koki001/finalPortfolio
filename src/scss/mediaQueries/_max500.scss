@@ -1,10 +1,13 @@
 @media (max-width: 500px){
 
+  #root .about {
+    padding-top: 0;
+  }
   .navBar {
     flex-direction: column;
     justify-content: space-between;
-    bottom: 50px;
-    height: 12%;
+    bottom: 10px;
+    height: 13%;
     .middleNav {
       width: 90%;
     }
@@ -45,19 +48,33 @@
       justify-content: flex-start;
       align-items: flex-start;
       .smallerScreenSkills {
-        margin-top: 30px;
+        margin-top: 5px;
         p {
           margin: 5px 5px;
         }
       }
     }
   }
+  #root .projects {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
   .projectsContainer {
+    justify-content: flex-start;
+    h2 {
+      display: none;
+    }
     .projectView {
       width: 100%;
       padding-bottom: 150px;
+      justify-content: flex-start;
+      .singleProject {
+        justify-content: flex-start;
+        height: 80%;
+      }
     }
     .projectViewContainer {
+      justify-content: flex-start;
       .prev,
       .next {
         bottom: 20%;
