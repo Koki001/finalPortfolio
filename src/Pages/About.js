@@ -99,25 +99,25 @@ const About = function (props) {
             <p>
               <span>Debugging</span>
             </p>
-            <p>
+            <p className="del">
               <span>Accessibility</span>
             </p>
-            <p>
+            <p className="del">
               <span>Video Games</span>
             </p>
-            <p>
+            <p className="del">
               <span>Chess</span>
             </p>
-            <p>
+            <p className="del">
               <span>Pool</span>
             </p>
-            <p>
+            <p className="del">
               <span>PC Building</span>
             </p>
-            <p>
+            <p className="del">
               <span>Motorcycles</span>
             </p>
-            <p>
+            <p className="del">
               <span>Coding</span>
             </p>
           </div>

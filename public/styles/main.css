@@ -810,6 +810,9 @@ template {
     width: 80%;
     justify-content: space-evenly;
   }
+  .navBar .rightNav svg {
+    font-size: 26px;
+  }
   .homeContainer h1 {
     font-size: 80px;
   }
@@ -837,8 +840,8 @@ template {
     display: none;
   }
   .aboutContainer .aboutSkills {
-    height: 30%;
-    justify-content: flex-start;
+    height: 40%;
+    justify-content: center;
     align-items: flex-start;
   }
   .aboutContainer .aboutSkills .smallerScreenSkills {
@@ -846,6 +849,9 @@ template {
   }
   .aboutContainer .aboutSkills .smallerScreenSkills p {
     margin: 5px 5px;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills .del {
+    display: none;
   }
   #root .projects {
     justify-content: flex-start;
@@ -859,32 +865,36 @@ template {
   }
   .projectsContainer .projectView {
     width: 100%;
-    padding-bottom: 150px;
     justify-content: flex-start;
   }
   .projectsContainer .projectView .singleProject {
-    justify-content: flex-start;
-    height: 80%;
+    justify-content: center;
+    height: 95%;
   }
   .projectsContainer .projectView .singleProject h3 {
     font-size: 24px;
   }
   .projectsContainer .projectView .singleProject h4 {
     font-size: 14px;
+    margin: 10px 0;
   }
   .projectsContainer .projectView .singleProject p {
     font-size: 14px;
+    margin: 0;
+  }
+  .projectsContainer .projectView .singleProject .linkButtons {
+    margin: 15px 0;
   }
   .projectsContainer .projectViewContainer {
     justify-content: flex-start;
     width: 100%;
   }
   .projectsContainer .projectViewContainer .prev {
-    bottom: 79%;
+    bottom: 83%;
     left: 0;
   }
   .projectsContainer .projectViewContainer .next {
-    bottom: 79%;
+    bottom: 83%;
     right: 0;
   }
 }
