@@ -7,6 +7,7 @@ const PokemonProject = function () {
       <h3>Pokemon Pokedex</h3>
       <div className="linkButtons">
         <a
+          className="liveLink"
           href="https://yadapokedexkoki.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,6 +15,7 @@ const PokemonProject = function () {
           <Button>Live Link</Button>
         </a>
         <a
+          className="codeLink"
           href="https://github.com/Koki001/pokedex"
           target="_blank"
           rel="noopener noreferrer"

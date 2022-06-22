@@ -28,8 +28,8 @@ const NavBar = function (props) {
   const handleClick = function (e) {
     setNavSelector(e.target.pathname);
   };
-  const handleStopAnimation = function() {
-    setStopAnim(true)
+  const handleStopAnimation = function () {
+    setStopAnim(true);
   };
   useEffect(
     function () {

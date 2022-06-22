@@ -7,6 +7,7 @@ const WeatherProject = function () {
       <h3>WeatherPal</h3>
       <div className="linkButtons">
         <a
+          className="liveLink"
           href="https://skvweatherproject3.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,6 +15,7 @@ const WeatherProject = function () {
           <Button>Live Link</Button>
         </a>
         <a
+          className="codeLink"
           href="https://github.com/Koki001/stojancoVasileskiProjectThree"
           target="_blank"
           rel="noopener noreferrer"

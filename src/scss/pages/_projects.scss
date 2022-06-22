@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s;
     p {
       font-size: 19px;
       text-align: justify;
@@ -78,6 +79,7 @@
     align-items: center;
     text-decoration: none;
     button {
+      animation: 0.2s borderAnim 0.3s 2;
       text-decoration: none;
       margin: 0 10px;
       border: 2px solid $fontColor;

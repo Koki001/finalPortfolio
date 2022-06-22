@@ -266,7 +266,7 @@ template {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  animation: fadeIn 0.5s;
+  animation: fadeIn 1.2s;
 }
 #root .wrapper {
   max-width: 1920px;
@@ -331,6 +331,17 @@ template {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes littleSpinY {
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+@keyframes borderAnim {
+  25% {
+    border: 2px solid #fdf2d5;
+    color: rgb(245, 203, 92);
   }
 }
 .aboutContainer {
@@ -569,6 +580,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s;
 }
 .projectsContainer .singleProject p {
   font-size: 19px;
@@ -593,6 +605,7 @@ template {
   text-decoration: none;
 }
 .projectsContainer .linkButtons button {
+  animation: 0.2s borderAnim 0.3s 2;
   text-decoration: none;
   margin: 0 10px;
   border: 2px solid rgb(245, 203, 92);
