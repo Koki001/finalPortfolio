@@ -26,8 +26,10 @@ const WeatherProject = function () {
       </h4>
       <p>
         Built using React JS and the OpenWeather API, the user can check the
-        weather forecast of any location they wish to search for. The
-        application has an easy-to-use interface and sound error handling.
+        weather forecast for any location in the database. There is an easy to
+        use drop-down menu for pre-filled country selections and an input for a
+        city. <br />
+        <br /> After submitting the search, the user is presented with a detailed weather card, as well as a four day forecast for that location. The application boasts sound error handling with custom pop-up boxes.
       </p>
     </div>
   );

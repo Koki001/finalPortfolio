@@ -29,10 +29,11 @@
     align-items: flex-start;
     .aboutTop {
       height: 50%;
+  
       .aboutText {
         height: 100%;
         p {
-          font-size: 18px;
+          font-size: 16px;
         }
         .skillHobbiesText {
           display: none;
@@ -70,6 +71,15 @@
       .singleProject {
         justify-content: flex-start;
         height: 80%;
+        h3 {
+          font-size: 24px;
+        }
+        h4 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 14px;
+        }
       }
     }
     .projectViewContainer {

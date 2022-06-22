@@ -28,7 +28,7 @@ const PodcastProject = function () {
       <p>
         This application allows the user to choose from a selection of podcasts
         that matches their chosen genre and commute time. <br />
-        <br /> The user first has to chose their starting (or use our
+        <br /> The user has to first chose their starting position (or use our
         geolocation) and final commute destination. Using the MapQuest API, we
         then present the user with a choice between walking, biking, or driving,
         all while being able to see the different information for each route.{" "}

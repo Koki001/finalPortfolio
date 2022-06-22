@@ -790,7 +790,7 @@ template {
     margin-top: 5px;
   }
   .projectsContainer .projectView {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -828,7 +828,7 @@ template {
     height: 100%;
   }
   .aboutContainer .aboutTop .aboutText p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .aboutContainer .aboutTop .aboutText .skillHobbiesText {
     display: none;
@@ -866,6 +866,15 @@ template {
     justify-content: flex-start;
     height: 80%;
   }
+  .projectsContainer .projectView .singleProject h3 {
+    font-size: 24px;
+  }
+  .projectsContainer .projectView .singleProject h4 {
+    font-size: 14px;
+  }
+  .projectsContainer .projectView .singleProject p {
+    font-size: 14px;
+  }
   .projectsContainer .projectViewContainer {
     justify-content: flex-start;
     width: 100%;
@@ -877,6 +886,14 @@ template {
   .projectsContainer .projectViewContainer .next {
     bottom: 79%;
     right: 0;
+  }
+}
+@media (max-width: 300px) {
+  .aboutContainer .aboutSkills {
+    display: none;
+  }
+  #root .aboutContainer {
+    justify-content: center;
   }
 }
 

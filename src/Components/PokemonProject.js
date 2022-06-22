@@ -26,11 +26,7 @@ const PokemonProject = function () {
         HTML
       </h4>
       <p>
-        This project was made in collaboration with Yadavan Aravinthan during
-        Juno College's Web Dev Bootcamp. We used data from an API to bring
-        functionality to our site all while making sure it looks great on all
-        screen sizes! This site lets the user familiarize with or explore all
-        Pokemon.
+        A Pokedex application for Pokemon lovers and newcomers alike. Paired with a very simple and descriptive design, this application allows the user to familiarize themselves with every Pokemon in existence. <br /><br /> Using the PokeAPI, detailed Pokemon information is fetched and displayed, with the user having a choice to randomize the results or search for a specific Pokemon to look up their stats. There user can also choose to display several Pokemon at once with less detailed information, but is also given the option to directly visit Pokemon's official site for the specific Pokemon of their choosing. 
       </p>
     </div>
   );
