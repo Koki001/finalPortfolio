@@ -6,16 +6,15 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import MonitorIcon from "@mui/icons-material/Monitor";
 import { useCallback, useEffect, useState } from "react";
 
-const NavBar = function () {
+const NavBar = function (props) {
   const location = useLocation();
   const [navSelector, setNavSelector] = useState("");
   const [match, setMatch] = useState([]);
   const [scrollTrack, setScrollTrack] = useState(true);
   const [final, setFinal] = useState("");
-  console.log(location.pathname)
+
   const trackRef = useCallback(
     function (e) {
       if (e !== null) {
@@ -28,8 +27,8 @@ const NavBar = function () {
   const handleClick = function (e) {
     setNavSelector(e.target.pathname);
   };
-  useEffect(
-    function () {
+  useEffect(function () {
+    
       if (match[0]) {
         if (location.pathname === match[0].pathname) {
           setFinal("home");
@@ -40,8 +39,11 @@ const NavBar = function () {
         }
       }
     },
-    [match, navSelector, scrollTrack]
+    [match, navSelector, scrollTrack, final]
   );
+  useEffect(function(){
+    setFinal(props.nav);
+  },[props])
 
   useEffect(function () {
     const navWheel = function () {
@@ -53,8 +55,7 @@ const NavBar = function () {
   return (
     <div className="navBar">
       <div className="leftNav">
-        <MonitorIcon />
-        <h3>SKV / Logo</h3>
+        <h3>-SKV-</h3>
       </div>
       <div className="middleNav" ref={trackRef}>
         <Button

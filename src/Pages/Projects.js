@@ -9,7 +9,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Projects = function () {
+const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
   const projectArray = [
     <PodcastProject />,
@@ -19,6 +19,7 @@ const Projects = function () {
   const navigate = useNavigate()
   const swipe = useSwipeable({
     onSwipedRight: function(){
+      props.finalProp("about")
       navigate("/about")
     }
   })

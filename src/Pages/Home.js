@@ -3,10 +3,11 @@ import WheelScroll from "../Components/WheelScroll";
 import { useSwipeable } from "react-swipeable";
 import { useNavigate } from "react-router-dom";
 
-const Home = function () {
+const Home = function (props) {
   const navigate = useNavigate()
   const swipe = useSwipeable({
     onSwipedLeft: function(){
+      props.finalProp("about")
       navigate("/about")
     }
   })

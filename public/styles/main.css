@@ -591,6 +591,11 @@ template {
 .navBar .leftNav svg {
   font-size: 20px;
 }
+.navBar .leftNav h3 {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
 .navBar .middleNav {
   width: 33%;
   display: flex;
@@ -678,16 +683,10 @@ template {
     font-size: 110px;
   }
   .homeContainer h1::after {
-    top: 220%;
-    right: 25%;
-    transform: rotate(120deg);
-    width: 250px;
+    display: none;
   }
   .homeContainer h1::before {
-    top: 220%;
-    right: 30%;
-    transform: rotate(120deg);
-    width: 250px;
+    display: none;
   }
   .navBar .leftNav {
     display: none;

@@ -25,13 +25,15 @@ import { VscDebug } from "react-icons/vsc"
 import {RiBilliardsFill} from "react-icons/ri"
 import { useNavigate } from "react-router-dom";
 
-const About = function () {
+const About = function (props) {
   const navigate = useNavigate()
   const swipe = useSwipeable({
     onSwipedLeft: function(){
+      props.finalProp("projects")
       navigate("/projects")
     },
     onSwipedRight: function(){
+      props.finalProp("home")
       navigate("/")
     }
   })

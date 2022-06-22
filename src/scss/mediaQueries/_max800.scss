@@ -18,16 +18,10 @@
       font-size: 110px;
     }
     h1::after {
-      top:220%;
-      right: 25%;
-      transform: rotate(120deg);
-      width: 250px;
+      display: none;
     }
     h1::before {
-      top: 220%;
-      right: 30%;
-      transform: rotate(120deg);
-      width: 250px;
+      display: none;
     }
   }
   .navBar {
