@@ -31,8 +31,7 @@
     justify-content: center;
     align-items: center;
     .aboutTop {
-      height: 50%;
-  
+      height: 35%;
       .aboutText {
         height: 100%;
         p {
@@ -47,7 +46,6 @@
       }
     }
     .aboutSkills {
-      height: 50%;
       justify-content: center;
       align-items: flex-start;
       margin-bottom: 100px;
@@ -73,7 +71,7 @@
     }
     .projectView {
       width: 100%;
-     
+
       justify-content: flex-start;
       .singleProject {
         justify-content: center;
@@ -98,7 +96,7 @@
     .projectViewContainer {
       justify-content: flex-start;
       width: 100%;
-      .prev{
+      .prev {
         bottom: 83%;
         left: 0;
       }

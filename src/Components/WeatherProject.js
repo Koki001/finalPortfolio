@@ -29,7 +29,9 @@ const WeatherProject = function () {
         weather forecast for any location in the database. There is an easy to
         use drop-down menu for pre-filled country selections and an input for a
         city. <br />
-        <br /> After submitting the search, the user is presented with a detailed weather card, as well as a four day forecast for that location. The application boasts sound error handling with custom pop-up boxes.
+        <br /> After submitting the search, the user is presented with a
+        detailed weather card, as well as a four day forecast for that location.
+        The application boasts sound error handling with custom pop-up boxes.
       </p>
     </div>
   );

@@ -825,7 +825,7 @@ template {
     align-items: center;
   }
   .aboutContainer .aboutTop {
-    height: 50%;
+    height: 35%;
   }
   .aboutContainer .aboutTop .aboutText {
     height: 100%;
@@ -840,7 +840,6 @@ template {
     display: none;
   }
   .aboutContainer .aboutSkills {
-    height: 50%;
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 100px;
