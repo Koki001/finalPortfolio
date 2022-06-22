@@ -1,0 +1,115 @@
+@use "../base/variables" as *;
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .aboutTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 55%;
+  }
+  .aboutImage {
+    width: 20%;
+    min-width: 250px;
+    img {
+      width: 100%;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.05);
+      filter: brightness(90%);
+    }
+  }
+  .aboutText {
+    width: 50%;
+    color: $fontColorLight;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 25px;
+    p span {
+      color: $fontColor;
+      font-weight: 500;
+    }
+  }
+  .aboutSkills {
+    color: $fontColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+    .skillsContainer {
+      position: relative;
+      width: 600px;
+      min-width: 570px;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $fontColorLight;
+        margin-top: 0;
+        span {
+          opacity: 0;
+          transition: all 0.5s;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+        }
+        svg  {
+          margin: 20px 20px;
+          font-size: 50px;
+          transition: all 0.5s;
+          color: $fontColor;
+          &:hover {
+            transform: scale(1.5);
+          }
+          &:hover + span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .hobbies {
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $fontColorLight;
+        margin-top: 0;
+        span {
+          opacity: 0;
+          transition: all 0.5s;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+        }
+        svg  {
+          margin: 20px 20px;
+          font-size: 50px;
+          transition: all 0.5s;
+          color: $fontColor;
+          &:hover,
+          &:focus {
+            transform: scale(1.5);
+          }
+          &:hover + span,
+          &:focus + span {
+            opacity: 1;
+          }
+        }
+      }
+  }
+}

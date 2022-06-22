@@ -1,0 +1,135 @@
+// About.js
+import WheelScroll from "../Components/WheelScroll";
+import {
+  FaReact,
+  FaCss3Alt,
+  FaHtml5,
+  FaGit,
+  FaGithub,
+  FaSass,
+  FaPython,
+  FaUniversalAccess,
+  FaGamepad,
+  FaChess,
+  FaMotorcycle,
+  FaCode,
+} from "react-icons/fa";
+import {
+  SiJavascript,
+  SiFirebase,
+  SiCypress,
+  SiPcgamingwiki,
+} from "react-icons/si";
+import { VscDebug } from "react-icons/vsc"
+import {RiBilliardsFill} from "react-icons/ri"
+
+const About = function () {
+  WheelScroll();
+  return (
+    <div className="about">
+      <div className="wrapper aboutContainer">
+        <div className="aboutTop">
+          <div className="aboutImage">
+            <img src="./assets/profilePicNoBgCropped.png" alt="" />
+          </div>
+          <div className="aboutText">
+            <p>
+              <span>Hello!</span> I'm a web developer with a passion for
+              creating innovative virtual spaces that focus on providing the
+              user with a seamless experience. Coming from a long and successful
+              work history in the hospitality and management sector, I've
+              learned that<span> teamwork</span>, <span>communication</span>,
+              and <span>attention to detail</span>, all play a key role in
+              creating a positive and productive work environment. I now combine
+              those traits with my technical skills when taking on projects in
+              the tech industry. 
+              <br />
+              <br />
+              Have a look at some of my <span>technical skills</span> and <span>hobbies</span> below:
+            </p>
+          </div>
+        </div>
+        <div className="aboutSkills">
+          <div className="skillsContainer">
+            <p>
+              <FaReact />
+              <span>ReactJS</span>
+            </p>
+            <p>
+              <SiJavascript />
+              <span>JavaScript</span>
+            </p>
+            <p>
+              <FaCss3Alt />
+              <span>CSS3</span>
+            </p>
+            <p>
+              <FaHtml5 />
+              <span>HTML5</span>
+            </p>
+            <p>
+              <FaGit />
+              <span>Git</span>
+            </p>
+            <p>
+              <FaGithub />
+              <span>GitHub</span>
+            </p>
+            <p>
+              <SiFirebase />
+              <span>Firebase</span>
+            </p>
+            <p>
+              <FaSass />
+              <span>SCSS/SASS</span>
+            </p>
+            <p>
+              <FaPython />
+              <span>Python</span>
+            </p>
+            <p>
+              <SiCypress />
+              <span>Cypress</span>
+            </p>
+            <p>
+              <VscDebug />
+              <span>Debugging</span>
+            </p>
+            <p>
+              <FaUniversalAccess />
+              <span>Accessibility</span>
+            </p>
+          </div>
+          <div className="hobbies">
+            <p>
+              <FaGamepad />
+              <span>Video Games</span>
+            </p>
+            <p>
+              <FaChess />
+              <span>Chess</span>
+            </p>
+            <p>
+              <RiBilliardsFill />
+              <span>Pool</span>
+            </p>
+            <p>
+              <SiPcgamingwiki />
+              <span>PC Building</span>
+            </p>
+            <p>
+              <FaMotorcycle />
+              <span>Motorcycles</span>
+            </p>
+            <p>
+              <FaCode />
+              <span>Coding</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

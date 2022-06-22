@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+.projectsContainer {
+  color: $fontColorLight;
+  font-family: 'Montserrat', sans-serif;
+  h2 {
+    text-align: center;
+    color: $fontColor;
+    font-weight: 400;
+    font-size: 40px;
+  }
+}

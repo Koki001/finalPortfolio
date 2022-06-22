@@ -1,0 +1,61 @@
+@use "../base/variables" as *;
+
+.navBar {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  bottom: 20px;
+  background-color: transparent;
+  color: $fontColor;
+  opacity: 0.8;
+  a {
+    margin: 0 5px;
+  }
+  .leftNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding-top: 10px;
+    svg {
+      font-size: 20px;
+    }
+  }
+  .middleNav {
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $fontColor;
+    padding-top: 10px;
+    a {
+      color: $fontColor;
+      padding: 0 20px;
+      font-size: 16px;
+      transition: all 0.5s;
+      &:hover {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+  .rightNav {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    svg {
+      font-size: 40px;
+      color: $fontColor;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
