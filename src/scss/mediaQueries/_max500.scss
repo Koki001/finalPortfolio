@@ -28,8 +28,8 @@
     }
   }
   .aboutContainer {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     .aboutTop {
       height: 50%;
   
@@ -47,7 +47,7 @@
       }
     }
     .aboutSkills {
-      height: 40%;
+      height: 30%;
       justify-content: center;
       align-items: flex-start;
       .smallerScreenSkills {
