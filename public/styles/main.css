@@ -757,7 +757,7 @@ template {
     flex-direction: column;
     justify-content: space-between;
     bottom: 10px;
-    height: 13%;
+    height: 15%;
   }
   .navBar .middleNav {
     width: 90%;
