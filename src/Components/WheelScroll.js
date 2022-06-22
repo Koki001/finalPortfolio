@@ -21,7 +21,7 @@ const WheelScroll = function () {
           navigate("/");
         } else if (location.pathname === "/projects" && e.deltaY < 0) {
           navigate("/about");
-        } 
+        }
       }
     };
     window.addEventListener("wheel", scrollFunction);

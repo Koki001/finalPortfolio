@@ -2,7 +2,7 @@
 
 .projectsContainer {
   color: $fontColorLight;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,18 +68,22 @@
       color: $fontColor;
     }
   }
+  a {
+    text-decoration: none;
+  }
   .linkButtons {
     margin: 25px 0 20px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    text-decoration: none;
     button {
+      text-decoration: none;
       margin: 0 10px;
       border: 2px solid $fontColor;
       &:hover {
-        background-color: $fontColor;
+        background-color: $fontColorLight;
         color: $backgroundColor;
-        border: 2px solid $fontColorLight;
       }
     }
   }

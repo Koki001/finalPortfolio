@@ -1,7 +1,7 @@
 // PodcastProject.js
 import Button from "@mui/material/Button";
 
-const PodcastProject = function(){
+const PodcastProject = function () {
   return (
     <div className="singleProject">
       <h3>Podcast Prioritizer</h3>
@@ -26,14 +26,20 @@ const PodcastProject = function(){
         Firebase
       </h4>
       <p>
-        A collaborative project that allows the user to map out their commute
-        and select a podcast that matches their commute time. The site is
-        designed with mobile-first layout in mind and uses multiple APIs. The
-        application also uses React Router and session storage to improve the
-        user experience.
+        This application allows the user to choose from a selection of podcasts
+        that matches their chosen genre and commute time. <br />
+        <br /> The user first has to chose their starting (or use our
+        geolocation) and final commute destination. Using the MapQuest API, we
+        then present the user with a choice between walking, biking, or driving,
+        all while being able to see the different information for each route.{" "}
+        <br />
+        <br /> Finally, the user can select a podcast genre and will then be
+        presented with the appropriate podcast lenghts for their chosen commute
+        time. This was all made possible using Hooks, React Router, and Session
+        Storage.
       </p>
     </div>
   );
-}
+};
 
-export default PodcastProject
+export default PodcastProject;

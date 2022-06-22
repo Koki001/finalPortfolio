@@ -1,5 +1,4 @@
-@media (max-width: 500px){
-
+@media (max-width: 500px) {
   #root .about {
     padding-top: 0;
   }
@@ -75,9 +74,14 @@
     }
     .projectViewContainer {
       justify-content: flex-start;
-      .prev,
+      width: 100%;
+      .prev{
+        bottom: 79%;
+        left: 0;
+      }
       .next {
-        bottom: 20%;
+        bottom: 79%;
+        right: 0;
       }
     }
   }

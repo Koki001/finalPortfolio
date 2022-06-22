@@ -21,22 +21,22 @@ import {
   SiCypress,
   SiPcgamingwiki,
 } from "react-icons/si";
-import { VscDebug } from "react-icons/vsc"
-import {RiBilliardsFill} from "react-icons/ri"
+import { VscDebug } from "react-icons/vsc";
+import { RiBilliardsFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 const About = function (props) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const swipe = useSwipeable({
-    onSwipedLeft: function(){
-      props.finalProp("projects")
-      navigate("/projects")
+    onSwipedLeft: function () {
+      props.finalProp("projects");
+      navigate("/projects");
     },
-    onSwipedRight: function(){
-      props.finalProp("home")
-      navigate("/")
-    }
-  })
+    onSwipedRight: function () {
+      props.finalProp("home");
+      navigate("/");
+    },
+  });
   WheelScroll();
   return (
     <div {...swipe} tabIndex={0} className="about">
@@ -55,33 +55,71 @@ const About = function (props) {
               and <span>attention to detail</span>, all play a key role in
               creating a positive and productive work environment. I now combine
               those traits with my technical skills when taking on projects in
-              the tech industry. 
+              the tech industry.
               <br />
-             
             </p>
-              <p className="skillHobbiesText">Have a look at some of my <span>technical skills</span> and <span>hobbies</span> below:</p>
+            <p className="skillHobbiesText">
+              Have a look at some of my <span>technical skills</span> and{" "}
+              <span>hobbies</span> below:
+            </p>
           </div>
         </div>
         <div className="aboutSkills">
           <div className="smallerScreenSkills">
-            <p><span>ReactJS</span></p>
-            <p><span>JavaScript</span></p>
-            <p><span>CSS3</span></p>
-            <p><span>HTML5</span></p>
-            <p><span>Git</span></p>
-            <p><span>GitHub</span></p>
-            <p><span>Firebase</span></p>
-            <p><span>SCSS/SASS</span></p>
-            <p><span>Python</span></p>
-            <p><span>Cypress</span></p>
-            <p><span>Debugging</span></p>
-            <p><span>Accessibility</span></p>
-            <p><span>Video Games</span></p>
-            <p><span>Chess</span></p>
-            <p><span>Pool</span></p>
-            <p><span>PC Building</span></p>
-            <p><span>Motorcycles</span></p>
-            <p><span>Coding</span></p>
+            <p>
+              <span>ReactJS</span>
+            </p>
+            <p>
+              <span>JavaScript</span>
+            </p>
+            <p>
+              <span>CSS3</span>
+            </p>
+            <p>
+              <span>HTML5</span>
+            </p>
+            <p>
+              <span>Git</span>
+            </p>
+            <p>
+              <span>GitHub</span>
+            </p>
+            <p>
+              <span>Firebase</span>
+            </p>
+            <p>
+              <span>SCSS/SASS</span>
+            </p>
+            <p>
+              <span>Python</span>
+            </p>
+            <p>
+              <span>Cypress</span>
+            </p>
+            <p>
+              <span>Debugging</span>
+            </p>
+            <p>
+              <span>Accessibility</span>
+            </p>
+            <p>
+              <span>Video Games</span>
+            </p>
+            <p>
+              <span>Chess</span>
+            </p>
+            <p>
+              <span>Pool</span>
+            </p>
+            <p>
+              <span>PC Building</span>
+            </p>
+            <p>
+              <span>Motorcycles</span>
+            </p>
+            <p>
+              <span>Coding</span>
+            </p>
           </div>
           <div className="skillsContainer">
             <p>

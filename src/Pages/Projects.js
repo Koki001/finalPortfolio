@@ -16,13 +16,13 @@ const Projects = function (props) {
     <WeatherProject />,
     <PokemonProject />,
   ];
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const swipe = useSwipeable({
-    onSwipedRight: function(){
-      props.finalProp("about")
-      navigate("/about")
-    }
-  })
+    onSwipedRight: function () {
+      props.finalProp("about");
+      navigate("/about");
+    },
+  });
 
   const handlePrevious = function () {
     if (showProject > 0) {

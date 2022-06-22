@@ -1,4 +1,4 @@
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   #root .wrapper {
     width: 95%;
   }
@@ -10,14 +10,12 @@
       width: 450px;
       height: 50%;
       min-width: 430px;
-        p {
-     
+      p {
         svg {
-        margin: 0 0 12px 0;
+          margin: 0 0 12px 0;
           font-size: 40px;
         }
       }
-        
     }
     .hobbies {
       flex-direction: column;
@@ -26,9 +24,9 @@
       width: 450px;
       min-width: 430px;
       height: 30%;
-      p{
+      p {
         width: 50px;
-        svg{
+        svg {
           margin: 20px 0;
           font-size: 40px;
         }

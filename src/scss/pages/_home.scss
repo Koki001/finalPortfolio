@@ -2,7 +2,7 @@
 
 .homeContainer {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: $fontColor;
   display: flex;
   justify-content: flex-start;
@@ -14,6 +14,7 @@
     position: relative;
     font-size: 90px;
     font-weight: 300;
+    font-family: "Montserrat", sans-serif;
     &::before {
       content: "";
       position: absolute;
@@ -64,6 +65,5 @@
         opacity: 1;
       }
     }
-
   }
 }

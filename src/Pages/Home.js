@@ -4,13 +4,13 @@ import { useSwipeable } from "react-swipeable";
 import { useNavigate } from "react-router-dom";
 
 const Home = function (props) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const swipe = useSwipeable({
-    onSwipedLeft: function(){
-      props.finalProp("about")
-      navigate("/about")
-    }
-  })
+    onSwipedLeft: function () {
+      props.finalProp("about");
+      navigate("/about");
+    },
+  });
   WheelScroll();
   return (
     <div {...swipe} tabIndex={0} className="home">

@@ -8,7 +8,12 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
@@ -17,7 +22,9 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -47,15 +54,19 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -73,7 +84,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -88,7 +100,8 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -105,31 +118,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -155,12 +183,14 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -169,7 +199,8 @@ textarea {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -178,7 +209,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -428,6 +460,7 @@ template {
   position: relative;
   font-size: 90px;
   font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 .homeContainer h1::before {
   content: "";
@@ -549,20 +582,24 @@ template {
 .projectsContainer .singleProject h4 span {
   color: rgb(245, 203, 92);
 }
+.projectsContainer a {
+  text-decoration: none;
+}
 .projectsContainer .linkButtons {
   margin: 25px 0 20px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
 }
 .projectsContainer .linkButtons button {
+  text-decoration: none;
   margin: 0 10px;
   border: 2px solid rgb(245, 203, 92);
 }
 .projectsContainer .linkButtons button:hover {
-  background-color: rgb(245, 203, 92);
+  background-color: #fdf2d5;
   color: rgb(36, 36, 35);
-  border: 2px solid #fdf2d5;
 }
 
 .navBar {
@@ -576,7 +613,6 @@ template {
   bottom: 20px;
   background-color: transparent;
   color: rgb(245, 203, 92);
-  opacity: 0.8;
 }
 .navBar a {
   margin: 0 5px;
@@ -737,12 +773,21 @@ template {
   .projectsContainer .projectViewContainer .prev {
     position: absolute;
     left: 5%;
-    bottom: 15%;
+    bottom: 75%;
   }
   .projectsContainer .projectViewContainer .next {
     position: absolute;
     right: 5%;
-    bottom: 15%;
+    bottom: 75%;
+  }
+  .projectsContainer .projectViewContainer .singleProject p {
+    font-size: 16px;
+    height: 75%;
+  }
+  .projectsContainer .projectViewContainer .singleProject p br {
+    display: block;
+    content: "";
+    margin-top: 5px;
   }
   .projectsContainer .projectView {
     width: 80%;
@@ -823,10 +868,15 @@ template {
   }
   .projectsContainer .projectViewContainer {
     justify-content: flex-start;
+    width: 100%;
   }
-  .projectsContainer .projectViewContainer .prev,
-.projectsContainer .projectViewContainer .next {
-    bottom: 20%;
+  .projectsContainer .projectViewContainer .prev {
+    bottom: 79%;
+    left: 0;
+  }
+  .projectsContainer .projectViewContainer .next {
+    bottom: 79%;
+    right: 0;
   }
 }
 

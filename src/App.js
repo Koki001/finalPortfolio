@@ -8,11 +8,10 @@ import NavBar from "./Components/NavBar";
 import { Fragment, useState } from "react";
 
 function App() {
-
-  const [final, setFinal] = useState("")
-  const finalState = function(e){
-    setFinal(e)
-  }
+  const [final, setFinal] = useState("");
+  const finalState = function (e) {
+    setFinal(e);
+  };
 
   return (
     <Fragment>

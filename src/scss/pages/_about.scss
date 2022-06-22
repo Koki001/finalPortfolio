@@ -5,10 +5,10 @@
   flex-direction: column;
   align-items: center;
   .aboutTop {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55%;
   }
   .aboutImage {
     width: 20%;
@@ -23,7 +23,7 @@
   .aboutText {
     width: 50%;
     color: $fontColorLight;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 19px;
     text-align: justify;
     line-height: 25px;
@@ -57,10 +57,10 @@
         span {
           opacity: 0;
           transition: all 0.5s;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-weight: 500;
         }
-        svg  {
+        svg {
           margin: 20px 20px;
           font-size: 50px;
           transition: all 0.5s;
@@ -84,32 +84,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-      p {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: $fontColorLight;
-        margin-top: 0;
-        span {
-          opacity: 0;
-          transition: all 0.5s;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: 500;
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $fontColorLight;
+      margin-top: 0;
+      span {
+        opacity: 0;
+        transition: all 0.5s;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+      }
+      svg {
+        margin: 20px 20px;
+        font-size: 50px;
+        transition: all 0.5s;
+        color: $fontColor;
+        &:hover,
+        &:focus {
+          transform: scale(1.5);
         }
-        svg  {
-          margin: 20px 20px;
-          font-size: 50px;
-          transition: all 0.5s;
-          color: $fontColor;
-          &:hover,
-          &:focus {
-            transform: scale(1.5);
-          }
-          &:hover + span,
-          &:focus + span {
-            opacity: 1;
-          }
+        &:hover + span,
+        &:focus + span {
+          opacity: 1;
         }
       }
+    }
   }
 }

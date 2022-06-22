@@ -14,6 +14,7 @@ const NavBar = function (props) {
   const [match, setMatch] = useState([]);
   const [scrollTrack, setScrollTrack] = useState(true);
   const [final, setFinal] = useState("");
+  const [stopAnim, setStopAnim] = useState(false);
 
   const trackRef = useCallback(
     function (e) {
@@ -27,8 +28,11 @@ const NavBar = function (props) {
   const handleClick = function (e) {
     setNavSelector(e.target.pathname);
   };
-  useEffect(function () {
-    
+  const handleStopAnimation = function() {
+    setStopAnim(true)
+  };
+  useEffect(
+    function () {
       if (match[0]) {
         if (location.pathname === match[0].pathname) {
           setFinal("home");
@@ -41,9 +45,12 @@ const NavBar = function (props) {
     },
     [match, navSelector, scrollTrack, final]
   );
-  useEffect(function(){
-    setFinal(props.nav);
-  },[props])
+  useEffect(
+    function () {
+      setFinal(props.nav);
+    },
+    [props]
+  );
 
   useEffect(function () {
     const navWheel = function () {
@@ -100,11 +107,12 @@ const NavBar = function (props) {
       </div>
       <div className="rightNav">
         <a
+          onAnimationEnd={handleStopAnimation}
           href="https://www.linkedin.com/in/koki-vasileski/"
           target="_blank"
           rel="noopener noreferrer"
           style={
-            final === "home"
+            final === "home" && stopAnim === false
               ? {
                   animationName: " wiggle",
                   animationDuration: "0.6s",
@@ -121,7 +129,7 @@ const NavBar = function (props) {
           target="_blank"
           rel="noopener noreferrer"
           style={
-            final === "home"
+            final === "home" && stopAnim === false
               ? {
                   animationName: " wiggle",
                   animationDuration: "0.6s",
@@ -138,7 +146,7 @@ const NavBar = function (props) {
           href="https://www.instagram.com/kokivasileski/"
           rel="noopener noreferrer"
           style={
-            final === "home"
+            final === "home" && stopAnim === false
               ? {
                   animationName: " wiggle",
                   animationDuration: "0.6s",
@@ -155,7 +163,7 @@ const NavBar = function (props) {
           href="mailto:kokicodes@gmail.com"
           rel="noopener noreferrer"
           style={
-            final === "home"
+            final === "home" && stopAnim === false
               ? {
                   animationName: " wiggle",
                   animationDuration: "0.6s",

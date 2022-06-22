@@ -1,6 +1,6 @@
 @use "../base/variables" as *;
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   #root .wrapper {
     width: 95%;
   }
@@ -45,14 +45,13 @@
     justify-content: center;
     .skillsContainer {
       display: none;
-
     }
     .smallerScreenSkills {
       width: 100%;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      p{
+      p {
         border: 2px solid $fontColor;
         padding: 5px;
         margin: 10px 10px;
@@ -76,17 +75,25 @@
       .prev {
         position: absolute;
         left: 5%;
-        bottom: 15%;
+        bottom: 75%;
       }
       .next {
         position: absolute;
         right: 5%;
-        bottom: 15%;
+        bottom: 75%;
+      }
+      .singleProject p {
+        font-size: 16px;
+        height: 75%;
+        br {
+          display: block;
+          content: "";
+          margin-top: 5px;
+        }
       }
     }
     .projectView {
       width: 80%;
-      
     }
   }
 }
