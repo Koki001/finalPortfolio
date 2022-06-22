@@ -247,6 +247,10 @@ template {
 #root h3 {
   margin: 0;
   padding: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#root .smallerScreenSkills {
+  display: none;
 }
 
 @keyframes fadeOut {
@@ -291,6 +295,7 @@ template {
   }
   50% {
     transform: scale(1.5);
+    filter: invert(93%) sepia(82%) saturate(234%) hue-rotate(313deg) brightness(102%) contrast(98%);
   }
   100% {
     transform: scale(1);
@@ -478,12 +483,86 @@ template {
 .projectsContainer {
   color: #fdf2d5;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .projectsContainer h2 {
   text-align: center;
   color: rgb(245, 203, 92);
   font-weight: 400;
   font-size: 40px;
+}
+.projectsContainer .projectViewContainer {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectsContainer .projectViewContainer button {
+  background-color: transparent;
+  border: none;
+  color: #fdf2d5;
+}
+.projectsContainer .projectViewContainer svg {
+  font-size: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.projectsContainer .projectViewContainer svg:hover {
+  transform: scale(1.4);
+}
+.projectsContainer .projectView {
+  width: 60%;
+  height: 100%;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectsContainer .projectView h3 {
+  text-align: center;
+}
+.projectsContainer .projectView h4 {
+  text-align: center;
+}
+.projectsContainer .projectView p {
+  text-align: justify;
+}
+.projectsContainer .singleProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectsContainer .singleProject p {
+  font-size: 19px;
+  text-align: justify;
+  line-height: 25px;
+}
+.projectsContainer .singleProject h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.projectsContainer .singleProject h4 span {
+  color: rgb(245, 203, 92);
+}
+.projectsContainer .linkButtons {
+  margin: 25px 0 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.projectsContainer .linkButtons button {
+  margin: 0 10px;
+  border: 2px solid rgb(245, 203, 92);
+}
+.projectsContainer .linkButtons button:hover {
+  background-color: rgb(245, 203, 92);
+  color: rgb(36, 36, 35);
+  border: 2px solid #fdf2d5;
 }
 
 .navBar {
@@ -544,6 +623,191 @@ template {
 }
 .navBar .rightNav svg:hover {
   transform: scale(1.5);
+}
+
+@media (max-width: 1000px) {
+  #root .wrapper {
+    width: 95%;
+  }
+  .aboutContainer .aboutSkills {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .aboutContainer .aboutSkills .skillsContainer {
+    width: 450px;
+    height: 50%;
+    min-width: 430px;
+  }
+  .aboutContainer .aboutSkills .skillsContainer p svg {
+    margin: 0 0 12px 0;
+    font-size: 40px;
+  }
+  .aboutContainer .aboutSkills .hobbies {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    min-width: 430px;
+    height: 30%;
+  }
+  .aboutContainer .aboutSkills .hobbies p {
+    width: 50px;
+  }
+  .aboutContainer .aboutSkills .hobbies p svg {
+    margin: 20px 0;
+    font-size: 40px;
+  }
+}
+@media (max-width: 800px) {
+  #root .wrapper {
+    width: 95%;
+  }
+  #root .smallerScreenSkills {
+    display: flex;
+  }
+  .homeContainer {
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .homeContainer .title {
+    width: 90%;
+    padding-top: 80px;
+  }
+  .homeContainer h1 {
+    font-size: 110px;
+  }
+  .homeContainer h1::after {
+    top: 220%;
+    right: 25%;
+    transform: rotate(120deg);
+    width: 250px;
+  }
+  .homeContainer h1::before {
+    top: 220%;
+    right: 30%;
+    transform: rotate(120deg);
+    width: 250px;
+  }
+  .navBar .leftNav {
+    display: none;
+  }
+  .navBar .middleNav {
+    width: 50%;
+  }
+  .aboutContainer .aboutTop {
+    flex-direction: column;
+  }
+  .aboutContainer .aboutTop .aboutText {
+    width: 100%;
+  }
+  .aboutContainer .aboutTop .aboutImage {
+    min-width: 170px;
+  }
+  .aboutContainer .aboutSkills {
+    justify-content: center;
+  }
+  .aboutContainer .aboutSkills .skillsContainer {
+    display: none;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills p {
+    border: 2px solid rgb(245, 203, 92);
+    padding: 5px;
+    margin: 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills p:hover {
+    transform: scale(1.5);
+  }
+  .aboutContainer .aboutSkills .hobbies {
+    display: none;
+  }
+  .projectsContainer .projectViewContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectsContainer .projectViewContainer .prev {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+  }
+  .projectsContainer .projectViewContainer .next {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+  }
+  .projectsContainer .projectView {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .navBar {
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 50px;
+    height: 12%;
+  }
+  .navBar .middleNav {
+    width: 90%;
+  }
+  .navBar .rightNav {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .homeContainer h1 {
+    font-size: 80px;
+  }
+  .homeContainer h1::before,
+.homeContainer h1::after {
+    display: none;
+  }
+  .aboutContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .aboutContainer .aboutTop {
+    height: 50%;
+  }
+  .aboutContainer .aboutTop .aboutText {
+    height: 100%;
+  }
+  .aboutContainer .aboutTop .aboutText p {
+    font-size: 18px;
+  }
+  .aboutContainer .aboutTop .aboutText .skillHobbiesText {
+    display: none;
+  }
+  .aboutContainer .aboutTop .aboutImage {
+    display: none;
+  }
+  .aboutContainer .aboutSkills {
+    height: 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills {
+    margin-top: 30px;
+  }
+  .aboutContainer .aboutSkills .smallerScreenSkills p {
+    margin: 5px 5px;
+  }
+  .projectsContainer .projectView {
+    width: 100%;
+    padding-bottom: 150px;
+  }
+  .projectsContainer .projectViewContainer .prev,
+.projectsContainer .projectViewContainer .next {
+    bottom: 20%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

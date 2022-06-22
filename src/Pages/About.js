@@ -1,5 +1,6 @@
 // About.js
 import WheelScroll from "../Components/WheelScroll";
+import { useSwipeable } from "react-swipeable";
 import {
   FaReact,
   FaCss3Alt,
@@ -22,11 +23,21 @@ import {
 } from "react-icons/si";
 import { VscDebug } from "react-icons/vsc"
 import {RiBilliardsFill} from "react-icons/ri"
+import { useNavigate } from "react-router-dom";
 
 const About = function () {
+  const navigate = useNavigate()
+  const swipe = useSwipeable({
+    onSwipedLeft: function(){
+      navigate("/projects")
+    },
+    onSwipedRight: function(){
+      navigate("/")
+    }
+  })
   WheelScroll();
   return (
-    <div className="about">
+    <div {...swipe} tabIndex={0} className="about">
       <div className="wrapper aboutContainer">
         <div className="aboutTop">
           <div className="aboutImage">
@@ -44,12 +55,32 @@ const About = function () {
               those traits with my technical skills when taking on projects in
               the tech industry. 
               <br />
-              <br />
-              Have a look at some of my <span>technical skills</span> and <span>hobbies</span> below:
+             
             </p>
+              <p className="skillHobbiesText">Have a look at some of my <span>technical skills</span> and <span>hobbies</span> below:</p>
           </div>
         </div>
         <div className="aboutSkills">
+          <div className="smallerScreenSkills">
+            <p><span>ReactJS</span></p>
+            <p><span>JavaScript</span></p>
+            <p><span>CSS3</span></p>
+            <p><span>HTML5</span></p>
+            <p><span>Git</span></p>
+            <p><span>GitHub</span></p>
+            <p><span>Firebase</span></p>
+            <p><span>SCSS/SASS</span></p>
+            <p><span>Python</span></p>
+            <p><span>Cypress</span></p>
+            <p><span>Debugging</span></p>
+            <p><span>Accessibility</span></p>
+            <p><span>Video Games</span></p>
+            <p><span>Chess</span></p>
+            <p><span>Pool</span></p>
+            <p><span>PC Building</span></p>
+            <p><span>Motorcycles</span></p>
+            <p><span>Coding</span></p>
+          </div>
           <div className="skillsContainer">
             <p>
               <FaReact />

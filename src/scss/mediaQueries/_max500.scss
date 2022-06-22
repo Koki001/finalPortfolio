@@ -1,0 +1,67 @@
+@media (max-width: 500px){
+
+  .navBar {
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 50px;
+    height: 12%;
+    .middleNav {
+      width: 90%;
+    }
+    .rightNav {
+      width: 80%;
+      justify-content: space-evenly;
+    }
+  }
+  .homeContainer {
+    h1 {
+      font-size: 80px;
+    }
+    h1::before,
+    h1::after {
+      display: none;
+    }
+  }
+  .aboutContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    .aboutTop {
+      height: 50%;
+      .aboutText {
+        height: 100%;
+        p {
+          font-size: 18px;
+        }
+        .skillHobbiesText {
+          display: none;
+        }
+      }
+      .aboutImage {
+        display: none;
+      }
+    }
+    .aboutSkills {
+      height: 30%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .smallerScreenSkills {
+        margin-top: 30px;
+        p {
+          margin: 5px 5px;
+        }
+      }
+    }
+  }
+  .projectsContainer {
+    .projectView {
+      width: 100%;
+      padding-bottom: 150px;
+    }
+    .projectViewContainer {
+      .prev,
+      .next {
+        bottom: 20%;
+      }
+    }
+  }
+}

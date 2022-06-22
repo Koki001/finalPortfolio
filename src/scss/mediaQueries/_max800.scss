@@ -1,0 +1,98 @@
+@use "../base/variables" as *;
+
+@media (max-width: 800px){
+  #root .wrapper {
+    width: 95%;
+  }
+  #root .smallerScreenSkills {
+    display: flex;
+  }
+  .homeContainer {
+    align-items: flex-start;
+    justify-content: center;
+    .title {
+      width: 90%;
+      padding-top: 80px;
+    }
+    h1 {
+      font-size: 110px;
+    }
+    h1::after {
+      top:220%;
+      right: 25%;
+      transform: rotate(120deg);
+      width: 250px;
+    }
+    h1::before {
+      top: 220%;
+      right: 30%;
+      transform: rotate(120deg);
+      width: 250px;
+    }
+  }
+  .navBar {
+    .leftNav {
+      display: none;
+    }
+    .middleNav {
+      width: 50%;
+    }
+  }
+  .aboutContainer .aboutTop {
+    flex-direction: column;
+    .aboutText {
+      width: 100%;
+    }
+    .aboutImage {
+      min-width: 170px;
+    }
+  }
+  .aboutContainer .aboutSkills {
+    justify-content: center;
+    .skillsContainer {
+      display: none;
+
+    }
+    .smallerScreenSkills {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      p{
+        border: 2px solid $fontColor;
+        padding: 5px;
+        margin: 10px 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+    .hobbies {
+      display: none;
+    }
+  }
+  .projectsContainer {
+    .projectViewContainer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .prev {
+        position: absolute;
+        left: 5%;
+        bottom: 15%;
+      }
+      .next {
+        position: absolute;
+        right: 5%;
+        bottom: 15%;
+      }
+    }
+    .projectView {
+      width: 80%;
+      
+    }
+  }
+}

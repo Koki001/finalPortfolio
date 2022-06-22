@@ -3,10 +3,84 @@
 .projectsContainer {
   color: $fontColorLight;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     text-align: center;
     color: $fontColor;
     font-weight: 400;
     font-size: 40px;
+  }
+  .projectViewContainer {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      background-color: transparent;
+      border: none;
+      color: $fontColorLight;
+    }
+    svg {
+      font-size: 50px;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+  .projectView {
+    width: 60%;
+    height: 100%;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .singleProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 19px;
+      text-align: justify;
+      line-height: 25px;
+    }
+    h3 {
+      font-size: 35px;
+      font-weight: 300;
+    }
+    h4 span {
+      color: $fontColor;
+    }
+  }
+  .linkButtons {
+    margin: 25px 0 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    button {
+      margin: 0 10px;
+      border: 2px solid $fontColor;
+      &:hover {
+        background-color: $fontColor;
+        color: $backgroundColor;
+        border: 2px solid $fontColorLight;
+      }
+    }
   }
 }
