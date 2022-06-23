@@ -900,6 +900,14 @@ template {
     width: 90%;
   }
 }
+@media (max-height: 700px) {
+  .aboutContainer .aboutSkills {
+    display: none;
+  }
+  .skillHobbiesText {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   #root .about {
     padding-top: 0;
