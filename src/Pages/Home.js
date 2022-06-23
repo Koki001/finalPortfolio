@@ -10,7 +10,7 @@ const Home = function (props) {
       props.finalProp("about");
       navigate("/about");
     },
-    onSwipedDown: function () {
+    onSwipedUp: function () {
       props.finalProp("about");
       navigate("/about");
     },

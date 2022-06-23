@@ -22,10 +22,10 @@ const Projects = function (props) {
       props.finalProp("about");
       navigate("/about");
     },
-    onSwipedDown: function () {
+    onSwipedUp: function () {
       console.log("end")
     },
-    onSwipedUp: function () {
+    onSwipedDown: function () {
       props.finalProp("about");
       navigate("/about");
     },

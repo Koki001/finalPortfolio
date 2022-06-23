@@ -36,11 +36,11 @@ const About = function (props) {
       props.finalProp("home");
       navigate("/");
     },
-    onSwipedDown: function(){
+    onSwipedUp: function(){
       props.finalProp("projects");
       navigate("/projects");
     },
-    onSwipedUp: function(){
+    onSwipedDown: function(){
       props.finalProp("home");
       navigate("/");
     }
