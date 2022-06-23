@@ -281,6 +281,9 @@ template {
   padding: 0;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
+#root .replaceMain {
+  display: none;
+}
 #root .smallerScreenSkills {
   display: none;
 }
@@ -886,7 +889,7 @@ template {
   }
   .projectsContainer .projectViewContainer .singleProject p {
     font-size: 16px;
-    height: 75%;
+    height: 50%;
   }
   .projectsContainer .projectViewContainer .singleProject p br {
     display: block;
@@ -925,14 +928,17 @@ template {
     display: none;
   }
   .aboutContainer {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .aboutContainer .aboutTop {
-    height: 35%;
+    height: 55%;
   }
   .aboutContainer .aboutTop .aboutText {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .aboutContainer .aboutTop .aboutText p {
     font-size: 16px;
@@ -945,8 +951,8 @@ template {
   }
   .aboutContainer .aboutSkills {
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 100px;
+    align-items: center;
+    height: 20%;
   }
   .aboutContainer .aboutSkills .smallerScreenSkills {
     margin-top: 5px;
@@ -958,21 +964,22 @@ template {
     display: none;
   }
   #root .projects {
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 0;
   }
   .projectsContainer {
-    justify-content: flex-start;
+    justify-content: center;
   }
   .projectsContainer h2 {
     display: none;
   }
   .projectsContainer .projectView {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .projectsContainer .projectView .singleProject {
     justify-content: center;
+    align-items: center;
     height: 95%;
   }
   .projectsContainer .projectView .singleProject h3 {
@@ -994,11 +1001,11 @@ template {
     width: 100%;
   }
   .projectsContainer .projectViewContainer .prev {
-    bottom: 83%;
+    bottom: 73%;
     left: 0;
   }
   .projectsContainer .projectViewContainer .next {
-    bottom: 83%;
+    bottom: 73%;
     right: 0;
   }
 }
@@ -1040,6 +1047,15 @@ template {
   }
   .ashPika {
     display: none;
+  }
+}
+@media (max-width: 350px) {
+  #root h1 {
+    display: none;
+  }
+  #root .replaceMain {
+    display: block;
+    font-size: 120px;
   }
 }
 @media (max-width: 300px) {

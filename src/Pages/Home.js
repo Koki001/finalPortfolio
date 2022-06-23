@@ -17,6 +17,7 @@ const Home = function (props) {
       <div className="wrapper homeContainer">
         <div className="title">
           <h1>Koki Vasileski</h1>
+          <h1 className="replaceMain">SKV</h1>
           <h2>Web Developer</h2>
         </div>
       </div>

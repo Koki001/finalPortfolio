@@ -28,12 +28,15 @@
     }
   }
   .aboutContainer {
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     .aboutTop {
-      height: 35%;
+      height: 55%;
       .aboutText {
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         p {
           font-size: 16px;
         }
@@ -47,8 +50,9 @@
     }
     .aboutSkills {
       justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 100px;
+      align-items: center;
+      // margin-bottom: 100px;
+      height: 20%;
       .smallerScreenSkills {
         margin-top: 5px;
         p {
@@ -61,20 +65,21 @@
     }
   }
   #root .projects {
-    justify-content: flex-start;
+    justify-content: center;
     padding-top: 0;
   }
   .projectsContainer {
-    justify-content: flex-start;
+    justify-content: center;
     h2 {
       display: none;
     }
     .projectView {
       width: 100%;
 
-      justify-content: flex-start;
+      justify-content:center;
       .singleProject {
         justify-content: center;
+        align-items: center;
         height: 95%;
 
         h3 {
@@ -97,11 +102,11 @@
       justify-content: flex-start;
       width: 100%;
       .prev {
-        bottom: 83%;
+        bottom: 73%;
         left: 0;
       }
       .next {
-        bottom: 83%;
+        bottom: 73%;
         right: 0;
       }
     }
