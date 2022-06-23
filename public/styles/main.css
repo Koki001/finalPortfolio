@@ -363,6 +363,25 @@ template {
     transform: rotateY(0deg);
   }
 }
+@keyframes runSmall {
+  0% {
+    right: 29%;
+  }
+  48% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    right: 58%;
+    transform: rotateY(180deg);
+  }
+  98% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    right: 30%;
+    transform: rotateY(0deg);
+  }
+}
 @keyframes runTwo {
   0% {
     left: 0;
@@ -654,7 +673,8 @@ template {
 }
 .projectsContainer .ashPika {
   position: absolute;
-  width: 11%;
+  width: 9%;
+  max-width: 9%;
   bottom: 35px;
   right: 480px;
   animation: run 4s infinite linear;
@@ -724,6 +744,20 @@ template {
   transform: scale(1.5);
 }
 
+@media (max-width: 1400px) {
+  .projectsContainer .ashPika {
+    bottom: 30px;
+    width: 12%;
+    max-width: 12%;
+  }
+}
+@media (max-width: 1200px) {
+  .projectsContainer .ashPika {
+    bottom: 35px;
+    width: 12%;
+    max-width: 12%;
+  }
+}
 @media (max-width: 1000px) {
   #root .wrapper {
     width: 95%;
@@ -761,8 +795,10 @@ template {
     font-size: 40px;
   }
   .projectsContainer .ashPika {
-    bottom: 45px;
+    bottom: 41px;
     width: 13%;
+    max-width: 13%;
+    animation: runSmall 4s infinite linear;
   }
 }
 @media (max-width: 800px) {

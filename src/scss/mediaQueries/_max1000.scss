@@ -1,3 +1,17 @@
+@media(max-width: 1400px){
+    .projectsContainer .ashPika {
+    bottom: 30px;
+    width: 12%;
+    max-width: 12%;
+  }
+}
+@media(max-width: 1200px){
+    .projectsContainer .ashPika {
+    bottom: 35px;
+    width: 12%;
+    max-width: 12%;
+  }
+}
 @media (max-width: 1000px) {
   #root .wrapper {
     width: 95%;
@@ -35,8 +49,10 @@
     }
   }
   .projectsContainer .ashPika {
-    bottom: 45px;
+    bottom: 41px;
     width: 13%;
     max-width: 13%;
+    animation: runSmall 4s infinite linear;
   }
 }
+// 

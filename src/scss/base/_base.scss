@@ -120,6 +120,25 @@
      transform: rotateY(0deg);
   }
 }
+@keyframes runSmall {
+  0% {
+    right: 29%;
+  }
+  48% {
+    transform: rotateY(0deg); 
+  }
+  50% { 
+    right: 58%;
+    transform: rotateY(180deg); 
+  }
+  98% {
+    transform: rotateY(180deg); 
+  }
+  100% {
+    right: 30%;    
+     transform: rotateY(0deg);
+  }
+}
 @keyframes runTwo {
   0% {
     left: 0;
