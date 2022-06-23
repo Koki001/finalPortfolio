@@ -81,6 +81,7 @@
       width: 100%;
 
       justify-content:center;
+
       .singleProject {
         justify-content: center;
         align-items: center;
@@ -96,6 +97,7 @@
         p {
           font-size: 14px;
           margin: 0;
+          line-height: 18px;
         }
         .linkButtons {
           margin: 15px 0;
@@ -103,21 +105,21 @@
       }
     }
     .projectViewContainer {
-      justify-content: flex-start;
+      justify-content: center;
       width: 100%;
       .prev {
-        bottom: 73%;
+        bottom: 75%;
         left: 0;
       }
       .next {
-        bottom: 73%;
+        bottom: 75%;
         right: 0;
       }
     }
   }
 }
 
-@media (max-height: 500px){
+@media (max-height: 600px){
   .projectsContainer .projectView .singleProject p {
     display: none;
   }
@@ -155,5 +157,10 @@
   }
   .ashPika {
     display: none;
+  }
+}
+@media (max-height: 500px) and (max-width: 800px) {
+  .homeContainer h1 {
+    font-size: 60px;
   }
 }
