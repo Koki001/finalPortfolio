@@ -107,3 +107,44 @@
     }
   }
 }
+
+@media (max-height: 500px){
+  .projectsContainer .projectView .singleProject p {
+    display: none;
+  }
+  .projectsContainer .projectView {
+    padding: 0;
+  }
+  .projectsContainer .projectViewContainer .next,
+  .projectsContainer .projectViewContainer .prev {
+    bottom: 130px;
+  }
+  .projectsContainer .projectView {
+    justify-content: center;
+  }
+  .aboutContainer .aboutSkills {
+    display: none;
+  }
+  .aboutContainer .aboutTop {
+    height: 100%;
+  }
+  .homeContainer .title {
+    padding: 0;
+  }
+  .navBar {
+    justify-content: center;
+    bottom: 20px;
+  }
+  .aboutContainer .aboutImage {
+    display: none;
+  }
+  .aboutContainer .aboutTop {
+    width: 100%;
+  }
+  .aboutContainer .aboutText {
+    width: 100%;
+  }
+  .ashPika {
+    display: none;
+  }
+}
