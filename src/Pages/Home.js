@@ -10,6 +10,10 @@ const Home = function (props) {
       props.finalProp("about");
       navigate("/about");
     },
+    onSwipedDown: function () {
+      props.finalProp("about");
+      navigate("/about");
+    },
   });
   WheelScroll();
   return (
