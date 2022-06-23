@@ -76,9 +76,6 @@ const About = function (props) {
               <span>CSS3</span>
             </p>
             <p>
-              <span>HTML5</span>
-            </p>
-            <p>
               <span>Git</span>
             </p>
             <p>
@@ -89,6 +86,9 @@ const About = function (props) {
             </p>
             <p>
               <span>SCSS/SASS</span>
+            </p>
+            <p>
+              <span>HTML5</span>
             </p>
             <p>
               <span>Python</span>
@@ -127,16 +127,16 @@ const About = function (props) {
               <span>ReactJS</span>
             </p>
             <p>
-              <SiJavascript />
-              <span>JavaScript</span>
+              <SiCypress />
+              <span>Cypress</span>
             </p>
             <p>
               <FaCss3Alt />
               <span>CSS3</span>
             </p>
             <p>
-              <FaHtml5 />
-              <span>HTML5</span>
+              <VscDebug />
+              <span>Debugging</span>
             </p>
             <p>
               <FaGit />
@@ -159,12 +159,12 @@ const About = function (props) {
               <span>Python</span>
             </p>
             <p>
-              <SiCypress />
-              <span>Cypress</span>
+              <SiJavascript />
+              <span>JavaScript</span>
             </p>
             <p>
-              <VscDebug />
-              <span>Debugging</span>
+              <FaHtml5 />
+              <span>HTML5</span>
             </p>
             <p>
               <FaUniversalAccess />

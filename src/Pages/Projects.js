@@ -58,7 +58,6 @@ const Projects = function (props) {
   return (
     <div {...swipe} tabIndex={0} className="projects" onKeyDown={handleKeyDown}>
       <div className="wrapper projectsContainer">
-        <h2>Recent Projects</h2>
         <div className="projectViewContainer">
           <button className="prev" onClick={handlePrevious}>
             <ArrowBackIosNewIcon />

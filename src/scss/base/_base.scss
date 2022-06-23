@@ -101,3 +101,45 @@
    color: $fontColor;
 }}
 
+@keyframes run {
+  0% {
+    right: 30%;
+  }
+  48% {
+    transform: rotateY(0deg); 
+  }
+  50% { 
+    right: 60%;
+    transform: rotateY(180deg); 
+  }
+  98% {
+    transform: rotateY(180deg); 
+  }
+  100% {
+    right: 30%;    
+     transform: rotateY(0deg);
+  }
+}
+@keyframes runTwo {
+  0% {
+    left: 0;
+  }
+
+  48% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    left: calc(100% - 150px);
+    transform: rotateY(180deg);
+  }
+
+  98% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    left: 0;
+    transform: rotateY(0deg);
+  }
+}

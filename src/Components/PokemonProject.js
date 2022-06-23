@@ -38,6 +38,7 @@ const PokemonProject = function () {
         information, but is also given the option to directly visit Pokemon's
         official site for the specific Pokemon of their choosing.
       </p>
+      <img className="ashPika" src="./assets/ashPika.gif" />
     </div>
   );
 };

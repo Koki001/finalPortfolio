@@ -79,7 +79,7 @@
     align-items: center;
     text-decoration: none;
     button {
-      animation: 0.2s borderAnim 0.3s 2;
+      animation: 0.2s borderAnim 0.3s 4;
       text-decoration: none;
       margin: 0 10px;
       border: 2px solid $fontColor;
@@ -88,5 +88,12 @@
         color: $backgroundColor;
       }
     }
+  }
+  .ashPika {
+    position: absolute;
+    width: 11%;
+    bottom: 35px;
+    right: 480px;
+    animation: run 4s infinite linear;
   }
 }
