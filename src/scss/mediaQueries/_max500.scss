@@ -159,8 +159,12 @@
     display: none;
   }
 }
-@media (max-height: 500px) and (max-width: 800px) {
+@media (max-height: 500px) and (max-width: 1000px) {
   .homeContainer h1 {
     font-size: 60px;
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }

@@ -1059,9 +1059,12 @@ html, body {
     display: none;
   }
 }
-@media (max-height: 500px) and (max-width: 800px) {
+@media (max-height: 500px) and (max-width: 1000px) {
   .homeContainer h1 {
     font-size: 60px;
+  }
+  .homeContainer h1::before, .homeContainer h1::after {
+    display: none;
   }
 }
 @media (max-width: 350px) {
