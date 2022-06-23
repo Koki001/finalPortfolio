@@ -99,7 +99,7 @@ const About = function (props) {
             <p>
               <span>Debugging</span>
             </p>
-            <p className="del">
+            <p>
               <span>Accessibility</span>
             </p>
             <p className="del">
@@ -170,29 +170,27 @@ const About = function (props) {
               <FaUniversalAccess />
               <span>Accessibility</span>
             </p>
-          </div>
-          <div className="hobbies">
-            <p>
+            <p className="hobbies">
               <FaGamepad />
               <span>Video Games</span>
             </p>
-            <p>
+            <p className="hobbies">
               <FaChess />
               <span>Chess</span>
             </p>
-            <p>
+            <p className="hobbies">
               <RiBilliardsFill />
               <span>Pool</span>
             </p>
-            <p>
+            <p className="hobbies">
               <SiPcgamingwiki />
               <span>PC Building</span>
             </p>
-            <p>
+            <p className="hobbies">
               <FaMotorcycle />
               <span>Motorcycles</span>
             </p>
-            <p>
+            <p className="hobbies">
               <FaCode />
               <span>Coding</span>
             </p>

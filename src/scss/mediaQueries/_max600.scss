@@ -1,0 +1,17 @@
+@media (max-width: 600px) and (max-height: 700px){
+  .projectsContainer {
+    .projectView {
+      width: 100%;
+    }
+  }
+}
+@media (max-height: 750px){
+    .projectsContainer {
+    .projectView {
+      width: 100%;
+    }
+  }
+  .projectsContainer .singleProject h3 {
+    font-size: 28px;
+  }
+}

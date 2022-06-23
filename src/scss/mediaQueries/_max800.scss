@@ -6,6 +6,13 @@
   }
   #root .smallerScreenSkills {
     display: flex;
+    p {
+      width: calc(100% / 4.5);
+      text-align: center;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
   .homeContainer {
     align-items: flex-start;
@@ -39,10 +46,12 @@
     }
     .aboutImage {
       min-width: 170px;
+      display: none;
     }
   }
   .aboutContainer .aboutSkills {
     justify-content: center;
+    height: 60%;
     .skillsContainer {
       display: none;
     }
@@ -61,9 +70,9 @@
           transform: scale(1.5);
         }
       }
-    }
-    .hobbies {
-      display: none;
+      .del {
+        border-color: $fontColorLight;
+      }
     }
   }
   .projectsContainer {
@@ -101,6 +110,11 @@
   }
 }
 @media (max-height: 700px){
+  .aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .aboutContainer .aboutSkills {
     display: none;
   }

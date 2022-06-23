@@ -2,6 +2,9 @@
   #root .about {
     padding-top: 0;
   }
+  #root .smallerScreenSkills p {
+    width: calc(100% / 3);
+  }
   .navBar {
     flex-direction: column;
     justify-content: space-between;
@@ -28,10 +31,10 @@
     }
   }
   .aboutContainer {
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     .aboutTop {
-      height: 55%;
+      height: 80%;
       .aboutText {
         height: 100%;
         display: flex;
@@ -52,9 +55,10 @@
       justify-content: center;
       align-items: center;
       // margin-bottom: 100px;
-      height: 20%;
+      height: 40%;
       .smallerScreenSkills {
         margin-top: 5px;
+        height: 100%;
         p {
           margin: 5px 5px;
         }
