@@ -9,11 +9,11 @@ const Home = function (props) {
     onSwipedLeft: function () {
       props.finalProp("about");
       navigate("/about");
-    },
-    onSwipedUp: function () {
-      props.finalProp("about");
-      navigate("/about");
-    },
+    }
+    // onSwipedUp: function () {
+    //   props.finalProp("about");
+    //   navigate("/about");
+    // },
   });
   WheelScroll();
   return (

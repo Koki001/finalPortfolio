@@ -21,14 +21,14 @@ const Projects = function (props) {
     onSwipedRight: function () {
       props.finalProp("about");
       navigate("/about");
-    },
-    onSwipedUp: function () {
-      console.log("end")
-    },
-    onSwipedDown: function () {
-      props.finalProp("about");
-      navigate("/about");
-    },
+    }
+    // onSwipedUp: function () {
+    //   console.log("end")
+    // },
+    // onSwipedDown: function () {
+    //   props.finalProp("about");
+    //   navigate("/about");
+    // },
   });
 
   const handlePrevious = function () {
