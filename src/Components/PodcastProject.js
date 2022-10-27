@@ -7,15 +7,15 @@ const PodcastProject = function () {
       <h3>Podcast Prioritizer</h3>
       <div className="linkButtons">
         <a
-        className="liveLink"
-          href="https://unrivaled-bubblegum-a5e52d.netlify.app/"
+          className="liveLink"
+          href="https://podcast-prioritizer-skv.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button>Live Link</Button>
         </a>
         <a
-        className="codeLink"
+          className="codeLink"
           href="https://github.com/PodcastPrioritizerProject/podcastPrioritizer"
           target="_blank"
           rel="noopener noreferrer"
