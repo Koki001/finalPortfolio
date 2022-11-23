@@ -15,6 +15,7 @@ const NavBar = function (props) {
   const [scrollTrack, setScrollTrack] = useState(true);
   const [final, setFinal] = useState("");
   const [stopAnim, setStopAnim] = useState(false);
+  const [showEmail, setShowEmail] = useState(false);
 
   const trackRef = useCallback(
     function (e) {
@@ -30,6 +31,9 @@ const NavBar = function (props) {
   };
   const handleStopAnimation = function () {
     setStopAnim(true);
+  };
+  const handleShowEmail = function (e) {
+    setShowEmail(!showEmail);
   };
   useEffect(
     function () {
@@ -159,9 +163,11 @@ const NavBar = function (props) {
           <InstagramIcon />
         </a>
         <a
-          target="_blank"
-          href="mailto:kokicodes@gmail.com"
-          rel="noopener noreferrer"
+          onClick={handleShowEmail}
+          className="emailNav"
+          // target="_blank"
+          // href="mailto:kokicodes@gmail.com"
+          // rel="noopener noreferrer"
           style={
             final === "home" && stopAnim === false
               ? {
@@ -173,6 +179,10 @@ const NavBar = function (props) {
               : null
           }
         >
+          {" "}
+          {showEmail === true && (
+            <span className="emailInfo">kokicodes@gmail.com</span>
+          )}
           <EmailIcon />
         </a>
       </div>

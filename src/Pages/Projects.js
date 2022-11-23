@@ -4,6 +4,7 @@ import { useSwipeable } from "react-swipeable";
 import PodcastProject from "../Components/PodcastProject";
 import PokemonProject from "../Components/PokemonProject";
 import WeatherProject from "../Components/WeatherProject";
+import ChartProject from "../Components/ChartProject";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
@@ -12,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
   const projectArray = [
+    <ChartProject />,
     <PodcastProject />,
     <WeatherProject />,
     <PokemonProject />,

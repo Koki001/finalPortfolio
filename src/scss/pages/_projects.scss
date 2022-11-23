@@ -34,7 +34,7 @@
     }
   }
   .projectView {
-    width: 60%;
+    width: 70%;
     height: 100%;
     padding-bottom: 96px;
     display: flex;
@@ -46,9 +46,13 @@
     h4 {
       text-align: center;
     }
-    p {
-      text-align: justify;
-    }
+    // p {
+    //   text-align: justify;
+    // }
+  }
+  .inProgress {
+    font-size: 14px;
+    display: block;
   }
   .singleProject {
     display: flex;
@@ -58,7 +62,7 @@
     animation: fadeIn 0.5s;
     p {
       font-size: 19px;
-      text-align: justify;
+      // text-align: justify;
       line-height: 25px;
     }
     h3 {
@@ -71,6 +75,9 @@
   }
   a {
     text-decoration: none;
+  }
+  .rechartsLink {
+    color: $fontColor;
   }
   .linkButtons {
     margin: 25px 0 20px 0;
