@@ -79,6 +79,12 @@
     .ashPika {
       display: none;
     }
+    .wrenchGif {
+      display: none;
+    }
+    .podcastGif {
+      display: none;
+    }
     .projectViewContainer {
       position: relative;
       display: flex;
@@ -109,7 +115,7 @@
     }
   }
 }
-@media (max-height: 700px){
+@media (max-height: 700px) {
   .aboutContainer {
     display: flex;
     justify-content: center;
@@ -124,5 +130,4 @@
   .projectsContainer .projectView {
     width: 80%;
   }
-
 }

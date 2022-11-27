@@ -80,7 +80,7 @@
     .projectView {
       width: 100%;
 
-      justify-content:center;
+      justify-content: center;
 
       .singleProject {
         justify-content: center;
@@ -119,7 +119,7 @@
   }
 }
 
-@media (max-height: 600px){
+@media (max-height: 600px) {
   .projectsContainer .projectView .singleProject p {
     display: none;
   }
@@ -156,6 +156,12 @@
     width: 100%;
   }
   .ashPika {
+    display: none;
+  }
+  .wrenchGif {
+    display: none;
+  }
+  .podcastGif {
     display: none;
   }
 }

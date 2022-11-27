@@ -104,4 +104,17 @@
     right: 480px;
     animation: run 4s infinite linear;
   }
+  .wrenchGif {
+    position: absolute;
+    width: 9%;
+    max-width: 150px;
+    bottom: 65px;
+  }
+  .podcastGif {
+    position: absolute;
+    width: 33%;
+    
+    // max-width: 150px;
+    bottom: 65px;
+  }
 }

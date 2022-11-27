@@ -43,8 +43,11 @@ const ChartProject = function () {
         customizable and easy to use. <br /> <br /> Users are able to pick a
         chart type from a drop-down menu, and start visualizing their data live.
         Once the chart is filled out, users can also download an image of their
-        chart. <br /> <br /> For now, Redux is only lightly used. Once every chart type is available, I would like for users to be able to switch between different types of charts without having to re-enter their data. 
+        chart. <br /> <br /> For now, Redux is only lightly used. Once every
+        chart type is available, I would like for users to be able to switch
+        between different types of charts without having to re-enter their data.
       </p>
+      <img className="wrenchGif" src="./assets/wrench.gif" />
     </div>
   );
 };

@@ -40,6 +40,7 @@ const PodcastProject = function () {
         time. This was all made possible using Hooks, React Router, and Session
         Storage.
       </p>
+      <img className="podcastGif" src="./assets/podcast.gif" />
     </div>
   );
 };

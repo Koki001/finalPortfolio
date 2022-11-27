@@ -662,6 +662,17 @@ html, body {
   right: 480px;
   animation: run 4s infinite linear;
 }
+.projectsContainer .wrenchGif {
+  position: absolute;
+  width: 9%;
+  max-width: 150px;
+  bottom: 65px;
+}
+.projectsContainer .podcastGif {
+  position: absolute;
+  width: 33%;
+  bottom: 65px;
+}
 
 .navBar {
   position: fixed;
@@ -874,6 +885,12 @@ html, body {
   .projectsContainer .ashPika {
     display: none;
   }
+  .projectsContainer .wrenchGif {
+    display: none;
+  }
+  .projectsContainer .podcastGif {
+    display: none;
+  }
   .projectsContainer .projectViewContainer {
     position: relative;
     display: flex;
@@ -1070,6 +1087,12 @@ html, body {
     width: 100%;
   }
   .ashPika {
+    display: none;
+  }
+  .wrenchGif {
+    display: none;
+  }
+  .podcastGif {
     display: none;
   }
 }
