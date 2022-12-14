@@ -680,18 +680,22 @@ html, body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 50px;
   bottom: 20px;
   background-color: transparent;
   color: rgb(245, 203, 92);
+  max-width: 1400px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 .navBar a {
   margin: 0 5px;
 }
 .navBar .leftNav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 33%;
   padding-top: 10px;
@@ -725,7 +729,7 @@ html, body {
 .navBar .rightNav {
   width: 33%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 10px;
 }
@@ -963,7 +967,7 @@ html, body {
     font-size: 80px;
   }
   .homeContainer h1::before,
-.homeContainer h1::after {
+  .homeContainer h1::after {
     display: none;
   }
   .aboutContainer {
@@ -1058,7 +1062,7 @@ html, body {
     padding: 0;
   }
   .projectsContainer .projectViewContainer .next,
-.projectsContainer .projectViewContainer .prev {
+  .projectsContainer .projectViewContainer .prev {
     bottom: 130px;
   }
   .projectsContainer .projectView {

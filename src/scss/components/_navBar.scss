@@ -6,17 +6,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 50px;
   bottom: 20px;
   background-color: transparent;
   color: $fontColor;
+  max-width: 1400px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   a {
     margin: 0 5px;
   }
   .leftNav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 33%;
     padding-top: 10px;
@@ -50,7 +54,7 @@
   .rightNav {
     width: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 10px;
     svg {
