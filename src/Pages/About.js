@@ -36,14 +36,6 @@ const About = function (props) {
       props.finalProp("home");
       navigate("/");
     }
-    // onSwipedUp: function(){
-    //   props.finalProp("projects");
-    //   navigate("/projects");
-    // },
-    // onSwipedDown: function(){
-    //   props.finalProp("home");
-    //   navigate("/");
-    // }
   });
   WheelScroll();
   return (
