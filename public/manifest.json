@@ -10,10 +10,10 @@
     {
       "src": "logoXL.png",
       "size": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "transparent",
   "start_url": "/",
   "display": "standalone"
 }
