@@ -1,4 +1,19 @@
 {
+  "short_name": "Koki Codes Portfolio",
+  "name": "Portfolio in React Simple",
+  "icons": [
+    {
+      "src": "logo.png",
+      "size": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "logoXL.png",
+      "size": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "transparent",
   "start_url": "/",
   "display": "standalone"
 }
