@@ -668,9 +668,22 @@ html, body {
   max-width: 150px;
   bottom: 65px;
 }
+.projectsContainer .writingGif {
+  position: absolute;
+  width: 9%;
+  max-width: 150px;
+  bottom: 65px;
+}
+.projectsContainer .weatherSunGif {
+  position: absolute;
+  width: 9%;
+  max-width: 150px;
+  bottom: 65px;
+}
 .projectsContainer .podcastGif {
   position: absolute;
   width: 33%;
+  max-width: 360px;
   bottom: 65px;
 }
 

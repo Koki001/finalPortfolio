@@ -35,6 +35,7 @@ const WeatherProject = function () {
         detailed weather card, as well as a four day forecast for that location.
         The application boasts sound error handling with custom pop-up boxes.
       </p>
+      <img className="weatherSunGif" src="./assets/weatherSun.gif" />
     </div>
   );
 };

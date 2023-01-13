@@ -9,10 +9,12 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import RetroPlanner from "../Components/RetroPlanner";
 
 const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
   const projectArray = [
+    <RetroPlanner />,
     <ChartProject />,
     <PodcastProject />,
     <WeatherProject />,
