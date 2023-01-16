@@ -908,6 +908,12 @@ html, body {
   .projectsContainer .podcastGif {
     display: none;
   }
+  .projectsContainer .writingGif {
+    display: none;
+  }
+  .projectsContainer .weatherSunGif {
+    display: none;
+  }
   .projectsContainer .projectViewContainer {
     position: relative;
     display: flex;
@@ -927,6 +933,10 @@ html, body {
   .projectsContainer .projectViewContainer .singleProject p {
     font-size: 16px;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .projectsContainer .projectViewContainer .singleProject p br {
     display: block;
@@ -953,7 +963,7 @@ html, body {
     width: 80%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   #root .about {
     padding-top: 0;
   }
@@ -988,16 +998,18 @@ html, body {
     align-items: flex-start;
   }
   .aboutContainer .aboutTop {
-    height: 40%;
+    height: 50%;
   }
   .aboutContainer .aboutTop .aboutText {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
   }
   .aboutContainer .aboutTop .aboutText p {
     font-size: 16px;
+    padding: 0 20px;
   }
   .aboutContainer .aboutTop .aboutText .skillHobbiesText {
     display: none;
@@ -1008,7 +1020,7 @@ html, body {
   .aboutContainer .aboutSkills {
     justify-content: flex-start;
     align-items: center;
-    height: 60%;
+    height: 50%;
   }
   .aboutContainer .aboutSkills .smallerScreenSkills {
     margin-top: 5px;
@@ -1032,6 +1044,7 @@ html, body {
   }
   .projectsContainer .projectView {
     width: 100%;
+    padding-bottom: 0;
     justify-content: center;
   }
   .projectsContainer .projectView .singleProject {
@@ -1050,6 +1063,10 @@ html, body {
     font-size: 14px;
     margin: 0;
     line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .projectsContainer .projectView .singleProject .linkButtons {
     margin: 15px 0;

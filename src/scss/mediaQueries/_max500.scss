@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   #root .about {
     padding-top: 0;
   }
@@ -34,14 +34,16 @@
     justify-content: center;
     align-items: flex-start;
     .aboutTop {
-      height: 40%;
+      height: 50%;
       .aboutText {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
         p {
           font-size: 16px;
+          padding: 0 20px;
         }
         .skillHobbiesText {
           display: none;
@@ -55,7 +57,7 @@
       justify-content: flex-start;
       align-items: center;
       // margin-bottom: 100px;
-      height: 60%;
+      height: 50%;
       .smallerScreenSkills {
         margin-top: 5px;
         height: 70%;
@@ -79,7 +81,7 @@
     }
     .projectView {
       width: 100%;
-
+      padding-bottom: 0;
       justify-content: center;
 
       .singleProject {
@@ -98,6 +100,10 @@
           font-size: 14px;
           margin: 0;
           line-height: 18px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
         .linkButtons {
           margin: 15px 0;
@@ -116,6 +122,22 @@
         right: 0;
       }
     }
+    // .ashPika {
+    //   display: block;
+    //   width: 100%;
+    // }
+    // .wrenchGif {
+    //   display: block;
+    // }
+    // .podcastGif {
+    //   display: block;
+    // }
+    // .writingGif {
+    //   display: block;
+    // }
+    // .weatherSunGif {
+    //   display: block;
+    // }
   }
 }
 
