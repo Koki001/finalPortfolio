@@ -10,6 +10,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RetroPlanner from "../Components/RetroPlanner";
+import FlakesProject from "../Components/FlakesProject";
 
 const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
@@ -18,6 +19,7 @@ const Projects = function (props) {
     <ChartProject />,
     <PodcastProject />,
     <WeatherProject />,
+    <FlakesProject />,
     <PokemonProject />,
   ];
   const navigate = useNavigate();

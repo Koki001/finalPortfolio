@@ -624,6 +624,13 @@ html, body {
   font-size: 19px;
   line-height: 25px;
 }
+.projectsContainer .singleProject p a {
+  color: rgb(245, 203, 92);
+  display: inline;
+}
+.projectsContainer .singleProject p a:hover {
+  color: #fdf2d5;
+}
 .projectsContainer .singleProject h3 {
   font-size: 35px;
   font-weight: 300;
@@ -675,6 +682,12 @@ html, body {
   bottom: 65px;
 }
 .projectsContainer .weatherSunGif {
+  position: absolute;
+  width: 9%;
+  max-width: 150px;
+  bottom: 65px;
+}
+.projectsContainer .cerealGif {
   position: absolute;
   width: 9%;
   max-width: 150px;
@@ -914,6 +927,9 @@ html, body {
   .projectsContainer .weatherSunGif {
     display: none;
   }
+  .projectsContainer .cerealGif {
+    display: none;
+  }
   .projectsContainer .projectViewContainer {
     position: relative;
     display: flex;
@@ -1060,9 +1076,10 @@ html, body {
     margin: 10px 0;
   }
   .projectsContainer .projectView .singleProject p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     line-height: 18px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

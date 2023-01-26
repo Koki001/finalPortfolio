@@ -64,6 +64,13 @@
       font-size: 19px;
       // text-align: justify;
       line-height: 25px;
+      a {
+        color: $fontColor;
+        display: inline;
+      }
+      a:hover {
+        color: $fontColorLight;
+      }
     }
     h3 {
       font-size: 35px;
@@ -116,7 +123,13 @@
     max-width: 150px;
     bottom: 65px;
   }
-    .weatherSunGif {
+  .weatherSunGif {
+    position: absolute;
+    width: 9%;
+    max-width: 150px;
+    bottom: 65px;
+  }
+  .cerealGif {
     position: absolute;
     width: 9%;
     max-width: 150px;
@@ -126,7 +139,7 @@
     position: absolute;
     width: 33%;
     max-width: 360px;
-    
+
     // max-width: 150px;
     bottom: 65px;
   }
