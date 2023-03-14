@@ -24,7 +24,7 @@ const RetroPlanner = function () {
         </a>
       </div>
       <h4>
-        React <span>||</span> Firebase <span>||</span> SASS <span>||</span> MUI
+        React <span>||</span> Firebase <span>||</span> SCSS <span>||</span> MUI
       </h4>
       <p>
         This project is a retro-style planner where the user can create an account and start organizing their daily activities.<br /> <br /> The tasks added to the planner are saved under that user's account through Firebase. For convenience, any tasks created can also be dragged across sections without the use of external libraries.

@@ -27,7 +27,7 @@ const ChartProject = function () {
         </a>
       </div>
       <h4>
-        React <span>||</span> Redux <span>||</span> SASS <span>||</span> MUI
+        React <span>||</span> Redux <span>||</span> SCSS <span>||</span> MUI
       </h4>
       <p>
         Using the Recharts library, I wanted to create a fully dynamic graphing

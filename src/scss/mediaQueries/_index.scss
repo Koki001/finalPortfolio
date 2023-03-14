@@ -1,5 +1,5 @@
-@use "./max1000";
-@use "./max800";
-@use "./max500";
-@use "./max300";
-@use "./max600";
+@forward "./max1000";
+@forward "./max800";
+@forward "./max500";
+@forward "./max300";
+@forward "./max600";

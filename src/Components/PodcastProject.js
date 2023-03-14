@@ -24,7 +24,7 @@ const PodcastProject = function () {
         </a>
       </div>
       <h4>
-        React <span>||</span> SASS <span>||</span> REST APIs <span>||</span>{" "}
+        React <span>||</span> SCSS <span>||</span> REST APIs <span>||</span>{" "}
         Firebase
       </h4>
       <p>

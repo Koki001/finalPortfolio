@@ -11,13 +11,15 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RetroPlanner from "../Components/RetroPlanner";
 import FlakesProject from "../Components/FlakesProject";
+import JobiProject from "../Components/JobiProject";
 
 const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
   const projectArray = [
+    <JobiProject />,
+    <PodcastProject />,
     <RetroPlanner />,
     <ChartProject />,
-    <PodcastProject />,
     <WeatherProject />,
     <FlakesProject />,
     <PokemonProject />,

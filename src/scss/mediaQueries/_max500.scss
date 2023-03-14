@@ -178,13 +178,12 @@
   .aboutContainer .aboutText {
     width: 100%;
   }
-  .ashPika {
-    display: none;
-  }
-  .wrenchGif {
-    display: none;
-  }
-  .podcastGif {
+  .ashPika,
+  .wrenchGif,
+  .podcastGif,
+  .writingGif,
+  .weatherSunGif,
+  .cerealGif {
     display: none;
   }
 }
