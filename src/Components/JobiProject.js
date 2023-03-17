@@ -30,7 +30,7 @@ const JobiProject = function () {
         React <span>||</span> Redux <span>||</span> SCSS <span>||</span> Firebase
       </h4>
       <p>
-        * Currently, parts of the site are not responsive on smaller screen sizes, and some features are missing * <br /> <br /> This project emulates a job application board where visitors can browse the multi-page site, or search for available job openings. <br /> <br /> Additionally, users can sign up for a candidate or employer account, allowing them to post or apply for jobs, as well as giving them a variety of features under their personal profile.
+        * Currently, parts of the site are not responsive on smaller screen sizes, and some features are missing * <br /> <br /> This project simulates a job application board where visitors can browse the multi-page site, or search for available job openings. <br /> <br /> Additionally, users can sign up for a candidate or employer account, allowing them to post or apply for jobs, as well as giving them a variety of features under their personal profile.
       </p>
       <img className="wrenchGif" src="./assets/wrench.gif" />
     </div>
