@@ -889,6 +889,8 @@ html, body {
   }
   #root .smallerScreenSkills {
     display: flex;
+    max-height: 320px;
+    overflow-y: auto;
   }
   #root .smallerScreenSkills p {
     width: 22.2222222222%;
