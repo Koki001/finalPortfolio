@@ -3,6 +3,7 @@
 @media (max-width: 800px) {
   #root .wrapper {
     width: 95%;
+    max-height: none;
   }
   #root .smallerScreenSkills {
     display: flex;
@@ -39,8 +40,13 @@
       width: 50%;
     }
   }
+  .aboutContainer {
+    justify-content: space-evenly;
+  }
   .aboutContainer .aboutTop {
     flex-direction: column;
+    height: auto;
+    margin-top: 100px;
     .aboutText {
       width: 100%;
     }
@@ -51,7 +57,7 @@
   }
   .aboutContainer .aboutSkills {
     justify-content: center;
-    height: 60%;
+    height: auto;
     .skillsContainer {
       display: none;
     }

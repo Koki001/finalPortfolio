@@ -18,7 +18,7 @@
   }
   .aboutContainer .aboutText p {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 22px;
   }
   .aboutContainer .aboutSkills {
     flex-direction: column;
@@ -28,7 +28,7 @@
       height: 100%;
       width: 95%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       p {
         margin: 0;
         width: calc(100% / 6);

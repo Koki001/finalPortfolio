@@ -460,7 +460,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .aboutContainer .aboutSkills .skillsContainer p {
@@ -619,6 +619,49 @@ html, body {
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.5s;
+}
+.projectsContainer .singleProject .popupContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.projectsContainer .singleProject .popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 500px;
+  width: 700px;
+  background-color: rgb(36, 36, 35);
+  border: 1px solid rgb(245, 203, 92);
+}
+.projectsContainer .singleProject .popupContent ol {
+  overflow-y: auto;
+}
+.projectsContainer .singleProject .popupContent li {
+  padding: 10px 0;
+  line-height: 23px;
+}
+.projectsContainer .singleProject .popupContent button {
+  text-transform: capitalize;
+  margin: 10px 0;
+  padding: 5px 20px;
+  border: 1px solid #fdf2d5;
+  cursor: pointer;
+}
+.projectsContainer .singleProject .popupContent button:hover {
+  color: rgb(245, 203, 92);
+}
+.projectsContainer .singleProject .listOfChanges {
+  color: rgb(245, 203, 92);
+  cursor: pointer;
 }
 .projectsContainer .singleProject p {
   font-size: 19px;
@@ -799,7 +842,7 @@ html, body {
   }
   .aboutContainer .aboutText p {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 22px;
   }
   .aboutContainer .aboutSkills {
     flex-direction: column;
@@ -810,7 +853,7 @@ html, body {
     height: 100%;
     width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .aboutContainer .aboutSkills .skillsContainer p {
     margin: 0;
@@ -842,6 +885,7 @@ html, body {
 @media (max-width: 800px) {
   #root .wrapper {
     width: 95%;
+    max-height: none;
   }
   #root .smallerScreenSkills {
     display: flex;
@@ -876,8 +920,13 @@ html, body {
   .navBar .middleNav {
     width: 50%;
   }
+  .aboutContainer {
+    justify-content: space-evenly;
+  }
   .aboutContainer .aboutTop {
     flex-direction: column;
+    height: auto;
+    margin-top: 100px;
   }
   .aboutContainer .aboutTop .aboutText {
     width: 100%;
@@ -888,7 +937,7 @@ html, body {
   }
   .aboutContainer .aboutSkills {
     justify-content: center;
-    height: 60%;
+    height: auto;
   }
   .aboutContainer .aboutSkills .skillsContainer {
     display: none;
@@ -1013,9 +1062,6 @@ html, body {
     justify-content: center;
     align-items: flex-start;
   }
-  .aboutContainer .aboutTop {
-    height: 50%;
-  }
   .aboutContainer .aboutTop .aboutText {
     height: 100%;
     display: flex;
@@ -1044,9 +1090,6 @@ html, body {
   }
   .aboutContainer .aboutSkills .smallerScreenSkills p {
     margin: 5px 5px;
-  }
-  .aboutContainer .aboutSkills .smallerScreenSkills .del {
-    display: none;
   }
   #root .projects {
     justify-content: center;

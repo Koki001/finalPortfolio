@@ -20,7 +20,11 @@ import {
   SiFirebase,
   SiCypress,
   SiPcgamingwiki,
+  SiSupabase,
+  SiTypescript,
 } from "react-icons/si";
+import { TbBrandNextjs, TbBrandRedux } from "react-icons/tb";
+import {SiPostgresql} from "react-icons/si"
 import { VscDebug } from "react-icons/vsc";
 import { RiBilliardsFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
@@ -68,6 +72,21 @@ const About = function (props) {
           <div className="smallerScreenSkills">
             <p>
               <span>ReactJS</span>
+            </p>
+            <p>
+              <span>Typescript</span>
+            </p>
+            <p>
+              <span>Supabase</span>
+            </p>
+            <p>
+              <span>NextJS</span>
+            </p>
+            <p>
+              <span>Redux</span>
+            </p>
+            <p>
+              <span>Redux</span>
             </p>
             <p>
               <span>JavaScript</span>
@@ -125,6 +144,26 @@ const About = function (props) {
             <p>
               <FaReact />
               <span>ReactJS</span>
+            </p>
+            <p>
+              <SiTypescript />
+              <span>Typescript</span>
+            </p>
+            <p>
+              <SiSupabase />
+              <span>Supabase</span>
+            </p>
+            <p>
+              <TbBrandNextjs />
+              <span>NextJS</span>
+            </p>
+            <p>
+              <TbBrandRedux />
+              <span>Redux</span>
+            </p>
+            <p>
+              <SiPostgresql />
+              <span>Redux</span>
             </p>
             <p>
               <SiCypress />

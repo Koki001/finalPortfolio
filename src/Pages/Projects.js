@@ -2,27 +2,29 @@
 import WheelScroll from "../Components/WheelScroll";
 import { useSwipeable } from "react-swipeable";
 import PodcastProject from "../Components/PodcastProject";
-import PokemonProject from "../Components/PokemonProject";
+// import PokemonProject from "../Components/PokemonProject";
 import WeatherProject from "../Components/WeatherProject";
-import ChartProject from "../Components/ChartProject";
+// import ChartProject from "../Components/ChartProject";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import RetroPlanner from "../Components/RetroPlanner";
+// import RetroPlanner from "../Components/RetroPlanner";
 import FlakesProject from "../Components/FlakesProject";
 import JobiProject from "../Components/JobiProject";
+import MessengetProject from "../Components/MessengerProject";
 
 const Projects = function (props) {
   const [showProject, setShowProject] = useState(0);
   const projectArray = [
-    <JobiProject />,
+    <MessengetProject />,
     <PodcastProject />,
-    <RetroPlanner />,
-    <ChartProject />,
+    <JobiProject />,
+    // <RetroPlanner />,
+    // <ChartProject />,
     <WeatherProject />,
     <FlakesProject />,
-    <PokemonProject />,
+    // <PokemonProject />,
   ];
   const navigate = useNavigate();
   const swipe = useSwipeable({
@@ -30,13 +32,6 @@ const Projects = function (props) {
       props.finalProp("about");
       navigate("/about");
     }
-    // onSwipedUp: function () {
-    //   console.log("end")
-    // },
-    // onSwipedDown: function () {
-    //   props.finalProp("about");
-    //   navigate("/about");
-    // },
   });
 
   const handlePrevious = function () {
